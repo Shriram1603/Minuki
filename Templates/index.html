@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disease Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="symptom1">Symptom 1:</label>
+        <input type="text" name="symptom1"><br>
+        
+        <label for="symptom2">Symptom 2:</label>
+        <input type="text" name="symptom2"><br>
+
+        <label for="symptom3">Symptom 2:</label>
+        <input type="text" name="symptom3"><br>
+
+        <label for="symptom4">Symptom 2:</label>
+        <input type="text" name="symptom4"><br>
+
+        <label for="symptom5">Symptom 2:</label>
+        <input type="text" name="symptom5"><br>
+
+        <label for="symptom6">Symptom 2:</label>
+        <input type="text" name="symptom6"><br>
+
+        <label for="symptom7">Symptom 2:</label>
+        <input type="text" name="symptom7"><br>
+
+        <label for="symptom8">Symptom 2:</label>
+        <input type="text" name="symptom8"><br>
+
+        <label for="symptom9">Symptom 2:</label>
+        <input type="text" name="symptom9"><br>
+
+        <label for="symptom10">Symptom 2:</label>
+        <input type="text" name="symptom10"><br>
+
+        <label for="symptom11">Symptom 2:</label>
+        <input type="text" name="symptom11"><br>
+
+        <label for="symptom12">Symptom 2:</label>
+        <input type="text" name="symptom12"><br>
+
+        <label for="symptom13">Symptom 2:</label>
+        <input type="text" name="symptom13"><br>
+
+        <label for="symptom14">Symptom 2:</label>
+        <input type="text" name="symptom14"><br>
+
+        <label for="symptom15">Symptom 2:</label>
+        <input type="text" name="symptom15"><br>
+
+        <label for="symptom16">Symptom 2:</label>
+        <input type="text" name="symptom16"><br>
+        
+        <label for="symptom17">Symptom 2:</label>
+        <input type="text" name="symptom17"><br>
+        
+        <!-- Add more symptom inputs as needed -->
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h1>{{ prediction_text }}</h1>
+</body>
+</html>
